@@ -20,9 +20,7 @@ weatherForm.addEventListener("submit", (e) => {
         loader.style.visibility = "hidden";
         table.style.visibility = "hidden";
         errorMessage.style.visibility = "visible";
-        console.log(data.error);
-        document.querySelector("#error").innerHTML =
-          "Location not found. Please try another location.";
+        document.querySelector("#error").innerHTML = data.error;
       } else {
         loader.style.visibility = "hidden";
         errorMessage.style.visibility = "hidden";

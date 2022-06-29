@@ -47,7 +47,7 @@ app.get("/weather", (req, res) => {
     if (error) {
       console.log(error);
       return res.send({
-        error: "Please give an address.",
+        error: error,
       });
     } else {
       const { name, region, localtime } = data.location;
