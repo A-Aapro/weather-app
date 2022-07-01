@@ -59,6 +59,7 @@ app.get("/weather", (req, res) => {
         wind_speed,
         uv_index,
         feelslike,
+        weather_descriptions,
       } = data.current;
 
       res.send({
@@ -69,12 +70,21 @@ app.get("/weather", (req, res) => {
           localtime: localtime,
           temperature: temperature + " Celsius",
           observation_time: observation_time,
+          description: parseDescription(weather_descriptions),
           feels_like: feelslike + " Celsius",
           cloud_cover: cloudcover + " %",
           wind_speed: parseFloat(wind_speed * 0.2778).toFixed(2) + " m/s",
           uv_index: uv_index,
         },
       });
+    }
+
+    function parseDescription(weather) {
+      let weatherString = "";
+      weather.forEach((str) => {
+        weatherString = str + " ";
+      });
+      return weatherString;
     }
   });
 });
