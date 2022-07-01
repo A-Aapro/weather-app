@@ -167,7 +167,8 @@ footer {
   }
 
   #aboutText,
-  #helpText {
+  #helpText,
+  #examples {
     clear: left;
     padding-top: 30px;
   }
