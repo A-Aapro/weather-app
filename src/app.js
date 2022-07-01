@@ -26,7 +26,7 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
     name: "Anni Aapro",
-    text: "Hello! It's me, Anni, and this is my weather app created with Node.js and Express. You can use this app to get current weather from all around the world!",
+    text: "Hello! It's me, Anni, and this is my weather app created with Node.js and Express. You can use this app to get current weather around the world.",
   });
 });
 

@@ -25,6 +25,11 @@ h1 {
   margin-top: 30px;
 }
 
+#examples {
+  font-size: smaller;
+  margin-top: 30px;
+}
+
 img {
   width: 200px;
   margin: auto;
@@ -46,10 +51,6 @@ img {
 a {
   color: rgb(86, 244, 255);
   text-decoration: none;
-}
-
-form {
-  margin-top: 30px;
 }
 
 input {
@@ -74,7 +75,7 @@ input {
 }
 
 #loader {
-  margin-left: 6vw;
+  margin-top: 5px;
   border: 3px solid #f3f3f3;
   border-radius: 50%;
   border-top: 3px solid #3498db;

@@ -11,13 +11,19 @@
   <body>
     <div class="main-content">
     {{>header}}
+    <p id="examples">
+    Search by city, eg. London<br>
+    Specify location, eg. London, Canada<br>
+    Search by latitude and longitude, separated with comma eg. 61.197533,27.695864
+    </p>
+    <div>
      <form>
       <input id="address"type="text" aria-label="Type an address" placeholder="Location">
       <input id="button" type="submit" aria-label="Click this button to send address" value="Search">
      </form>
-
+      <div id="loader"></div>
+    </div>
     <p id="error"></p>
-    <div id="loader"></div>
   
      <table id="data">
     </table>
